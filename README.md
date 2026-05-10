@@ -2,9 +2,9 @@
 
 <a href='https://openaccess.thecvf.com/content/ICCV2025W/AIM/papers/Lu_Boosting_Inverse_Tone_Mapping_via_Diffusion_Regularization_ICCVW_2025_paper.pdf'><img src='https://img.shields.io/badge/Paper-ICCVW2025-b31b1b.svg'></a> &nbsp;&nbsp;
 
-## :trophy: Championship Award of the AIM 2025 Inverse Tone Mapping Challenge
+## :trophy: Championship Award of the ICCV 2025 Inverse Tone Mapping Challenge
 
-Our team achieved the **Championship Award** in the [AIM 2025 Inverse Tone Mapping Challenge](https://codalab.lisn.upsaclay.fr/competitions/22245), with **34.49 dB PSNR** and **0.95 SSIM** on the final test set.
+Our team achieved the **Championship Award** in the [ICCV 2025 Inverse Tone Mapping Challenge](https://codalab.lisn.upsaclay.fr/competitions/22245), with **34.49 dB PSNR** and **0.95 SSIM** on the final test set.
 
 This is the official PyTorch implementation of the paper:
 

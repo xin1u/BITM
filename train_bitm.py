@@ -1,26 +1,4 @@
-"""Task regularization fine-tuning for inverse tone mapping (Sec.3.2, Sec.4.2).
 
-Loads the diffusion-pre-trained network and fine-tunes on LDR-HDR pairs with:
-  - L_content: pixel-level restoration loss (Charbonnier / L1)
-  - L_add:     auxiliary loss (FFT / SSIM / LPIPS)
-  - L_gen:     generation loss (score matching, maintains generative prior)
-  - L_reg:     parameter importance-weighted regularization (Eq.6)
-  - L_orthog:  gradient orthogonal loss (Eq.7-9)
-
-Three-stage progressive training (Sec.4.2):
-  Stage 1: Adam, batch=22, patch=256, lr=4e-4, 1000ep, Char + 0.02*FFT
-  Stage 2: Adam, batch=3,  patch=512, lr=4e-5, 300ep,  Char + 0.2*SSIM, grad_accum
-  Stage 3: SGD,  batch=1,  patch=640, lr=2e-5, 200ep,  Char + 0.6*LPIPS, grad_accum
-
-Usage:
-    python train_bitm.py \
-        --experiment_name stage1 \
-        --load_pre_model True \
-        --pre_model ./ckpt/pretrained_model.pth \
-        --BATCH_SIZE 22 --Crop_patches 256 \
-        --learning_rate 0.0004 --EPOCH 1000 \
-        --base_loss char --addition_loss fft --addition_loss_coff 0.02
-"""
 import time, torchvision, argparse, logging, sys, os, gc
 import torch, random
 import numpy as np

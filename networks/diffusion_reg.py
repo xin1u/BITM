@@ -1,15 +1,4 @@
-"""Diffusion Regularization for Inverse Tone Mapping (Sec.3).
 
-Two-phase approach:
-  Phase 1 — Unconditional diffusion pre-training (Sec.3.1):
-    Pre-train the restoration network as a VP-SDE denoiser on HDR images,
-    so it acquires knowledge of the HDR image manifold.
-
-  Phase 2 — Task regularization fine-tuning (Sec.3.2):
-    Fine-tune on LDR-HDR pairs while preserving the generative prior via:
-      L_reg: parameter importance-weighted regularization (Eq.6)
-      L_orthog: gradient orthogonal loss (Eq.7-9)
-"""
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

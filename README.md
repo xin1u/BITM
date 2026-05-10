@@ -157,7 +157,7 @@ python train_bitm.py \
 If you find our repo useful for your research, please consider citing our paper:
 
 ```bibtex
-@InProceedings{Lu_2025_ICCV,
+@InProceedings{Lu_2025_ICCV_BITM,
     author    = {Lu, Xin and Peng, Yufeng and Ge, Chengjie and Sun, Zhijing and Zhou, Ziang and Liao, Zishun and Li, Zihao and Li, Dong and Kang, Qiyu and Fu, Xueyang and Zha, Zheng-Jun},
     title     = {Boosting Inverse Tone Mapping via Diffusion Regularization},
     booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},

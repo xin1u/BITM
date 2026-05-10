@@ -1,19 +1,4 @@
-"""Unconditional diffusion pre-training on HDR images (Sec.3.1).
 
-Pre-trains the restoration network as a VP-SDE denoiser on HDR-only data
-so that it acquires knowledge of the HDR image manifold. The pre-trained
-weights serve as the initialisation and regularisation anchor for the
-subsequent task fine-tuning stage.
-
-Usage:
-    python train_pretrain.py \
-        --hdr_dir ./data/train_hdr/ \
-        --save_path ./ckpt/ \
-        --epochs 200 \
-        --batch_size 16 \
-        --lr 0.0002 \
-        --crop_size 256
-"""
 import time, argparse, logging, sys, os, random
 import torch
 import numpy as np

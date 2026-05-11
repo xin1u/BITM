@@ -1,6 +1,8 @@
 # BITM: Boosting Inverse Tone Mapping via Diffusion Regularization
 
 <a href='https://openaccess.thecvf.com/content/ICCV2025W/AIM/papers/Lu_Boosting_Inverse_Tone_Mapping_via_Diffusion_Regularization_ICCVW_2025_paper.pdf'><img src='https://img.shields.io/badge/Paper-ICCVW2025-b31b1b.svg'></a> &nbsp;&nbsp;
+<a href='https://github.com/xin1u/BITM'><img src='https://img.shields.io/badge/Code-GitHub-181717.svg'></a> &nbsp;&nbsp;
+
 
 ## :trophy: Championship Award of the ICCV 2025 Inverse Tone Mapping Challenge
 
